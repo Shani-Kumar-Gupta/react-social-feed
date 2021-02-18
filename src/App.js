@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import FacebookFeed from './components/facebookfeed';
+import { TwitterFeed } from './components/twitterfeed';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Social Feed</h1>
+      <div className="feed">
+        <section className="facebook-feed">
+          <h2>Facebook Feeds</h2>
+          <FacebookFeed/>
+        </section>
+        <section className="twitter-feed">
+          <h2>Twitter Feeds</h2>
+          <TwitterFeed/>
+        </section>
+      </div>
     </div>
   );
 }

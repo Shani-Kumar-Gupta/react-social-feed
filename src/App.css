@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin: 20px;
 }
 
 .App-logo {
@@ -36,3 +37,22 @@
     transform: rotate(360deg);
   }
 }
+
+.feed {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.facebook-feed {
+  background-color: rgb(22, 194, 22);
+  color: white;
+  padding: 40px;
+}
+
+.twitter-feed {
+  background-color: rgb(72, 72, 236);
+  color: white;
+  padding: 40px;
+}
+
+
